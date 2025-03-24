@@ -3,12 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
-	bybit "github.com/wuhewuhe/bybit.go.api"
-)
 
-func main() {
-	GetCoinInfo()
-}
+	bybit "github.com/kdraigo/bybit.go.api"
+)
 
 func GetCoinInfo() {
 	client := bybit.NewBybitHttpClient("d08Wh6P037IXAvcrL2", "gLfd1BLGU9oq6YoRZRlwXkIQRYB4n5KvXDvv", bybit.WithBaseURL(bybit.TESTNET))

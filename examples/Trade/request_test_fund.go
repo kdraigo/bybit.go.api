@@ -3,12 +3,10 @@ package main
 import (
 	"context"
 	"fmt"
-	bybit "github.com/wuhewuhe/bybit.go.api"
+
+	bybit "github.com/kdraigo/bybit.go.api"
 )
 
-func main() {
-	RequestTestFund()
-}
 func RequestTestFund() {
 	client := bybit.NewBybitHttpClient("xxxx", "xxx", bybit.WithBaseURL(bybit.DEMO_ENV))
 	params := map[string]interface{}{

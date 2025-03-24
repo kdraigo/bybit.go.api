@@ -3,12 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
-	bybit "github.com/wuhewuhe/bybit.go.api"
-)
 
-func main() {
-	GetRecentTrade()
-}
+	bybit "github.com/kdraigo/bybit.go.api"
+)
 
 func GetRecentTrade() {
 	client := bybit.NewBybitHttpClient("", "", bybit.WithBaseURL(bybit.TESTNET))

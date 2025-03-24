@@ -3,12 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
-	bybit "github.com/wuhewuhe/bybit.go.api"
-)
 
-func main() {
-	GetPreimumIndexPriceKline()
-}
+	bybit "github.com/kdraigo/bybit.go.api"
+)
 
 func GetPreimumIndexPriceKline() {
 	client := bybit.NewBybitHttpClient("", "", bybit.WithBaseURL(bybit.TESTNET))

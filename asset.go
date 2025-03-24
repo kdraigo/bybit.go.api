@@ -2,8 +2,9 @@ package bybit_connector
 
 import (
 	"context"
-	"github.com/wuhewuhe/bybit.go.api/handlers"
 	"net/http"
+
+	"github.com/kdraigo/bybit.go.api/handlers"
 )
 
 func (s *BybitClientRequest) GetAssetOrderRecord(ctx context.Context, opts ...RequestOption) (res *ServerResponse, err error) {
